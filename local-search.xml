@@ -47,9 +47,9 @@
     
     <tags>
       
-      <tag>字符串</tag>
-      
       <tag>dp</tag>
+      
+      <tag>字符串</tag>
       
       <tag>状压 dp</tag>
       
@@ -207,8 +207,6 @@
       <tag>AC自动机</tag>
       
       <tag>哈希</tag>
-      
-      <tag>分块</tag>
       
     </tags>
     
