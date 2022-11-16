@@ -19,7 +19,7 @@
     <meta name="description" content="搬运自 7 月洛谷博客 。 与二分图匹配算法相结合的暴搜…🤮 传送门  根据勾股定理：  一个武器 (x,y)(x,y)(x,y) 能被炸弹 (u,v)(u,v)(u,v) 攻击到 ⇔(x−u)2+(y−v)2&lt;&#x3D;k2\Leftrightarrow (x-u)^2+(y-v)^2&lt;&#x3D;k^2⇔(x−u)2+(y−v)2&lt;&#x3D;k2  通过这个条件，对每个炸弹求出一个 mmm 位的 b">
 <meta property="og:type" content="article">
 <meta property="og:title" content="P1526 智破连环阵 题解">
-<meta property="og:url" content="http://felixfa06.cf/%E9%A2%98%E8%A7%A3/%E6%90%9C%E7%B4%A2/P1526%20%E6%99%BA%E7%A0%B4%E8%BF%9E%E7%8E%AF%E9%98%B5%20%E9%A2%98%E8%A7%A3/index.html">
+<meta property="og:url" content="http://felixfa06.cf/%E9%A2%98%E8%A7%A3/%E5%9B%BE%E8%AE%BA/P1526%20%E6%99%BA%E7%A0%B4%E8%BF%9E%E7%8E%AF%E9%98%B5%20%E9%A2%98%E8%A7%A3/index.html">
 <meta property="og:site_name" content="FelFa_1414666&#39;s Blog">
 <meta property="og:description" content="搬运自 7 月洛谷博客 。 与二分图匹配算法相结合的暴搜…🤮 传送门  根据勾股定理：  一个武器 (x,y)(x,y)(x,y) 能被炸弹 (u,v)(u,v)(u,v) 攻击到 ⇔(x−u)2+(y−v)2&lt;&#x3D;k2\Leftrightarrow (x-u)^2+(y-v)^2&lt;&#x3D;k^2⇔(x−u)2+(y−v)2&lt;&#x3D;k2  通过这个条件，对每个炸弹求出一个 mmm 位的 b">
 <meta property="og:locale" content="zh_CN">
@@ -286,6 +286,292 @@
   <div class="row nomargin-x">
     <div class="side-col d-none d-lg-block col-lg-2">
       
+  <aside class="sidebar category-bar" style="margin-right: -1rem">
+    
+
+
+
+
+
+<div class="category-list">
+  
+  
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="题解"
+        id="heading-4161afd7a4e47ddb8376cb63ba58880f" role="tab" data-toggle="collapse" href="#collapse-4161afd7a4e47ddb8376cb63ba58880f"
+        aria-expanded="true"
+      >
+        题解
+        <span class="list-group-count">(6)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-4161afd7a4e47ddb8376cb63ba58880f"
+           role="tabpanel" aria-labelledby="heading-4161afd7a4e47ddb8376cb63ba58880f">
+        
+        
+          
+          
+  <div class="category-post-list">
+    
+    
+  </div>
+
+          
+  
+    
+    
+    
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="dp"
+        id="heading-95687afb5d9a2a9fa39038f991640b0c" role="tab" data-toggle="collapse" href="#collapse-95687afb5d9a2a9fa39038f991640b0c"
+        aria-expanded="false"
+      >
+        dp
+        <span class="list-group-count">(2)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse " id="collapse-95687afb5d9a2a9fa39038f991640b0c"
+           role="tabpanel" aria-labelledby="heading-95687afb5d9a2a9fa39038f991640b0c">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/%E9%A2%98%E8%A7%A3/dp/%E5%9B%9B%E9%81%93DP%E7%AE%80%E8%AE%B0/" title="11.1模拟 四道DP简记"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">11.1模拟 四道DP简记</span>
+        </a>
+      
+    
+      
+      
+        <a href="/%E9%A2%98%E8%A7%A3/dp/CF1681E%20Labyrinth%20Adventures%20%E9%A2%98%E8%A7%A3/" title="CF1681E Labyrinth Adventures 题解"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">CF1681E Labyrinth Adventures 题解</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="分治"
+        id="heading-13ec15884e4aadd86467e4f636ab7142" role="tab" data-toggle="collapse" href="#collapse-13ec15884e4aadd86467e4f636ab7142"
+        aria-expanded="false"
+      >
+        分治
+        <span class="list-group-count">(1)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse " id="collapse-13ec15884e4aadd86467e4f636ab7142"
+           role="tabpanel" aria-labelledby="heading-13ec15884e4aadd86467e4f636ab7142">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/%E9%A2%98%E8%A7%A3/%E5%88%86%E6%B2%BB/CF1681F%20Unique%20Occurrences%20%E9%A2%98%E8%A7%A3/" title="CF1681F Unique Occurrences 题解"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">CF1681F Unique Occurrences 题解</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="图论"
+        id="heading-d08f425073cca127d4a21b6d39583634" role="tab" data-toggle="collapse" href="#collapse-d08f425073cca127d4a21b6d39583634"
+        aria-expanded="true"
+      >
+        图论
+        <span class="list-group-count">(2)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-d08f425073cca127d4a21b6d39583634"
+           role="tabpanel" aria-labelledby="heading-d08f425073cca127d4a21b6d39583634">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/%E9%A2%98%E8%A7%A3/%E5%9B%BE%E8%AE%BA/CF1680F%20Lenient%20Vertex%20Cover%E9%A2%98%E8%A7%A3/" title="CF1680F Leniet Vertex Cover 题解"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">CF1680F Leniet Vertex Cover 题解</span>
+        </a>
+      
+    
+      
+      
+        <a href="/%E9%A2%98%E8%A7%A3/%E5%9B%BE%E8%AE%BA/P1526%20%E6%99%BA%E7%A0%B4%E8%BF%9E%E7%8E%AF%E9%98%B5%20%E9%A2%98%E8%A7%A3/" title="P1526 智破连环阵 题解"
+           class="list-group-item list-group-item-action
+           active">
+          <span class="category-post">P1526 智破连环阵 题解</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="字符串"
+        id="heading-cc4dd1da7e1a754534215f02fb9ba85d" role="tab" data-toggle="collapse" href="#collapse-cc4dd1da7e1a754534215f02fb9ba85d"
+        aria-expanded="false"
+      >
+        字符串
+        <span class="list-group-count">(1)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse " id="collapse-cc4dd1da7e1a754534215f02fb9ba85d"
+           role="tabpanel" aria-labelledby="heading-cc4dd1da7e1a754534215f02fb9ba85d">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/%E9%A2%98%E8%A7%A3/%E5%AD%97%E7%AC%A6%E4%B8%B2/CF710F%20String%20Set%20Queries%20%E9%A2%98%E8%A7%A3/" title="CF710F String Set Queries 题解"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">CF710F String Set Queries 题解</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="搜索"
+        id="heading-e5f71fc31e7246dd6ccc5539570471b0" role="tab" data-toggle="collapse" href="#collapse-e5f71fc31e7246dd6ccc5539570471b0"
+        aria-expanded="true"
+      >
+        搜索
+        <span class="list-group-count">(1)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-e5f71fc31e7246dd6ccc5539570471b0"
+           role="tabpanel" aria-labelledby="heading-e5f71fc31e7246dd6ccc5539570471b0">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/%E9%A2%98%E8%A7%A3/%E5%9B%BE%E8%AE%BA/P1526%20%E6%99%BA%E7%A0%B4%E8%BF%9E%E7%8E%AF%E9%98%B5%20%E9%A2%98%E8%A7%A3/" title="P1526 智破连环阵 题解"
+           class="list-group-item list-group-item-action
+           active">
+          <span class="category-post">P1526 智破连环阵 题解</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="树上问题"
+        id="heading-015f865cf0f6d76e21bb119563282f86" role="tab" data-toggle="collapse" href="#collapse-015f865cf0f6d76e21bb119563282f86"
+        aria-expanded="false"
+      >
+        树上问题
+        <span class="list-group-count">(1)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse " id="collapse-015f865cf0f6d76e21bb119563282f86"
+           role="tabpanel" aria-labelledby="heading-015f865cf0f6d76e21bb119563282f86">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/%E9%A2%98%E8%A7%A3/%E5%88%86%E6%B2%BB/CF1681F%20Unique%20Occurrences%20%E9%A2%98%E8%A7%A3/" title="CF1681F Unique Occurrences 题解"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">CF1681F Unique Occurrences 题解</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+        
+      </div>
+    </div>
+  
+</div>
+
+
+  </aside>
+
 
     </div>
 
@@ -356,7 +642,7 @@
   
     <span>></span>
     
-  <a href="/categories/%E9%A2%98%E8%A7%A3/%E5%9B%BE%E8%AE%BA/" class="category-chain-item">图论</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/%E6%90%9C%E7%B4%A2/" class="category-chain-item">搜索</a>
   
   
 
@@ -390,7 +676,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>P1526 智破连环阵 题解</div>
-      <div>http://felixfa06.cf/题解/搜索/P1526 智破连环阵 题解/</div>
+      <div>http://felixfa06.cf/题解/图论/P1526 智破连环阵 题解/</div>
     </div>
     <div class="license-meta">
       
@@ -402,7 +688,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年7月6日</div>
+          <div>2022/07/06 13:54</div>
         </div>
       
       
@@ -466,7 +752,7 @@
         var options = Object.assign(
           {"clientID":"b8e8127abd44643dc4c3","clientSecret":"1f216cf877f1e6bfdacfe2d4ec60be4f00bf5ef2","repo":"FelixFa06.github.io","owner":"FelixFa06","admin":"FelixFa06","language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
           {
-            id: 'e74d0fd8bf3a9faec05936b847002f56'
+            id: '04ee268c88396e2156db410b2bc6dadc'
           }
         )
         var gitalk = new Gitalk(options);
