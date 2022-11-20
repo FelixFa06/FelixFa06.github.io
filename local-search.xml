@@ -35,17 +35,17 @@
       
       <tag>图论</tag>
       
-      <tag>dp</tag>
-      
-      <tag>倍增</tag>
-      
       <tag>哈希</tag>
       
       <tag>游记</tag>
       
+      <tag>dp</tag>
+      
       <tag>ST表</tag>
       
       <tag>动态dp</tag>
+      
+      <tag>倍增</tag>
       
     </tags>
     
@@ -97,9 +97,9 @@
     
     <tags>
       
-      <tag>dp</tag>
-      
       <tag>字符串</tag>
+      
+      <tag>dp</tag>
       
       <tag>状压dp</tag>
       
@@ -165,9 +165,9 @@
       
       <tag>dp</tag>
       
-      <tag>线段树</tag>
-      
       <tag>倍增</tag>
+      
+      <tag>线段树</tag>
       
     </tags>
     
