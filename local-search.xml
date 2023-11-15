@@ -22,15 +22,15 @@
       
       <tag>dp</tag>
       
-      <tag>游记</tag>
-      
       <tag>字符串</tag>
       
-      <tag>数据结构</tag>
+      <tag>游记</tag>
       
       <tag>模拟</tag>
       
       <tag>贪心</tag>
+      
+      <tag>数据结构</tag>
       
     </tags>
     
@@ -88,9 +88,9 @@
       
       <tag>倍增</tag>
       
-      <tag>游记</tag>
-      
       <tag>哈希</tag>
+      
+      <tag>游记</tag>
       
       <tag>ST表</tag>
       
@@ -301,11 +301,11 @@
     
     <tags>
       
-      <tag>哈希</tag>
-      
       <tag>字符串</tag>
       
       <tag>AC自动机</tag>
+      
+      <tag>哈希</tag>
       
     </tags>
     
